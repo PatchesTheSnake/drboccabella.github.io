@@ -6,7 +6,9 @@ import convolution,test
 app = Flask(__name__)
 global better, generation, best, c1, c2
 better, generation, best  = 99, 1,np.ones((50,50))
-best = np.loadtxt("t.txt")
+go=input("use saved data(Y/n)")
+if go=="Y":
+	best = np.loadtxt("t.txt")
 
 
 def remake():
