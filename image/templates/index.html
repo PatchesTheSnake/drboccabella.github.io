@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DONUT TIME</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+	text-align: center;
+  padding: 10px;
+}
+.divi {
+  float: left;
+  width: 10%;
+	text-align: center;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Donuticity Learning</h2>
+<p>Check out the two images and select the one you think has the better donut heatmap</p>
+	
+<form action = '/returnAns' method = "POST">
+<div class="row">
+	
+  <div class="column" style="background-color:#ccc;">
+		<p>Donut 1</p>
+		<img src = "{{image_1}}" alt = "Image 1">
+		<img src = "{{image_2}}" alt = "Image 2">
+		<input type="radio" id="one" name="donut" value="1" checked>
+	</div>
+	 <div class="divi" style="background-color:#fff;"></div>
+  <div class="column" style="background-color:#ccc;">
+		<p>Donut 2</p>
+		<img src = "{{image_3}}" alt = "Image 3">
+		<img src = "{{image_4}}" alt = "Image 4">
+		<input type="radio" id="two" name="donut" value="2">
+    
+	</div>
+  
+			
+	
+	
+	
+	<div class="divi" style="background-color:#fff;"></div>
+	<div class="column" style="background-color:#ccc;">
+		<p>regenarate<p>
+		<input type="radio"  name="donut" value="3">
+		
+	</div>	
+</div>
+<label for="donut2">change by</label>
+<input type="range" id="volume" name="donut2" min="1" max="99" />
+	<input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
+
+
