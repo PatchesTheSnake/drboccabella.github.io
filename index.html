@@ -2,9 +2,10 @@
 
 <html>
 <style>
-    *{
-        font-family:  Arial, Helvetica, sans-serif;
+    * {
+        font-family: Arial, Helvetica, sans-serif;
     }
+
     #img1 {
         display: block;
         margin-left: auto;
@@ -12,9 +13,15 @@
 
     }
 
+    .c {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
     .overlay-text {
         position: absolute;
-        top: 50%;
+        top: 10%;
         left: 50%;
         transform: translate(-50%, -50%);
 
@@ -22,10 +29,13 @@
         padding: 10px 20px;
         font-size: 50px;
         text-align: center;
+        width: 500px;
+        height: 100px;
     }
 
     .centerme {
         text-align: center;
+       
     }
 
     .centerme2 {
@@ -35,26 +45,47 @@
 
     }
 
-    h1 {
+    h1,h2 {
         color: #4287f5
     }
 
     a {
         color: black;
     }
+
+    tr,
+    td {
+        padding: 10px;
+        margin: 10px;
+        border: 5px solid black;
+
+        border-collapse: collapse;
+    }
+
+    table {
+        border: 5px solid black;
+
+        border-collapse: collapse;
+
+
+
+    }
 </style>
 
 <body>
-    <img id="img1" width="100%" src="Dominic Header.png" />
-    <h1 class="overlay-text">Coding & Science Portfolio</h1>
-
-    <div class="centerme">
-        <h1>Dominic's Coding Projects </h1>
+    <div class="c">
+        <img id="img1" width="100%" src="Dominic Header.png" />
+        <h1 class="overlay-text">Coding & Science Portfolio</h1>
+    </div>
+    <div  class="centerme">
+        <h1 >Dominic's Coding Projects </h1>
     </div>
     <table class="centerme2">
         <tr>
             <td>
-                <video controls width="464" height="261"><source src="white.mp4" type="video/mp4" /></video>
+                <video controls width="464" height="261">
+                    <source src="white.mp4" type="video/mp4" />
+                </video>
             </td>
             <td>
                 <h1>Video Whiteboard</h1>
@@ -66,8 +97,8 @@
                     school and high school entries) in the 2023 Coder Fair for this project.
                     <br>
                     <br>
-                <div class="centerme">[<a
-                        href="https://github.com/PatchesTheSnake/ssa-website/tree/main/whiteboard" target="_blank">View Code on
+                <div class="centerme">[<a href="https://github.com/PatchesTheSnake/ssa-website/tree/main/whiteboard"
+                        target="_blank">View Code on
                         github</a>]</span>
                     </p>
             </td>
@@ -87,51 +118,95 @@
                     I created this in scratch when I was 9 years old.
                     <br>
 
-                <div class="centerme">[<a
-                        href="https://scratch.mit.edu/projects/666682362/" target="_blank">Launch Dominic Wordle</a>]</span>
+                <div class="centerme">[<a href="https://scratch.mit.edu/projects/666682362/" target="_blank">Launch
+                        Dominic Wordle</a>]</span>
                     </p>
             </td>
         </tr>
         <tr>
             <td>
-                <video controls width="464" height="261"><source src="3d maze.mp4" type="video/mp4" /></video>
+                <video controls width="464" height="261">
+                    <source src="3d maze.mp4" type="video/mp4" />
+                </video>
 
             </td>
             <td>
                 <h1>First Person 3D Maze Game</h1>
                 <p>
-                    This game renders the 3D Maze from the 2D Map in real-time. The goal of the game is to explore the maze while collecting stars and avoiding enemies. The game ends when your health is 0 or you collect all the stars.
+                    This game renders the 3D Maze from the 2D Map in real-time. The goal of the game is to explore the
+                    maze while collecting stars and avoiding enemies. The game ends when your health is 0 or you collect
+                    all the stars.You can also press M to overlay the 2D map which shows the walls (in gray) and the real-time location of all the stars and enemies.
                     <br>
                     <br>
                     I created this in scratch when I was 12 years old.
                     <br>
 
-                <div class="centerme">[<a
-                        href="https://scratch.mit.edu/projects/1083910817/" target="_blank">Launch 3D Maze</a>]</span>
+              
                     </p>
             </td>
         </tr>
-       
+
         <tr>
             <td>
-                <video controls width="464" height="261"><source src="doughnut.mp4" type="video/mp4" /></video>
+                <video controls width="464" height="261">
+                    <source src="doughnut.mp4" type="video/mp4" />
+                </video>
 
             </td>
             <td>
                 <h1>AI Shape Detector</h1>
-                <p>This program uses neural networks and convolutions to learn a shape and then detect it. This example was created to detect donuts.
-                    
+                <p>This program uses neural networks and convolutions to learn a shape and then detect it. This example
+                    was created to detect donuts.
+
                     <br>
                     <br>
                     I created this in python when I was 11 years old.
                     <br>
 
-                <div class="centerme">[<a
-                        href="https://github.com/PatchesTheSnake/ssa-website/tree/main/image" target="_blank">View Code on github</a>]</span>
+                <div class="centerme">[<a href="https://github.com/PatchesTheSnake/ssa-website/tree/main/image"
+                        target="_blank">View Code on github</a>]</span>
                     </p>
             </td>
         </tr>
     </table>
+    <span>
+        <h3>These are just a few of the many projects I have created. I have samples in a variety of languages and
+            technologies including HTML, JavaScript, Python, C++, Java, Lua, PHP, Scratch, and SQL. </h3>
+    </span>
+    <br>
+    <br>
+    <h1 class="centerme">Dominic's Science Fair Projects</h1>
+    <table class="centerme2">
+        <tr>
+            <td>
+                <img src="2021 Science Fair.png" width="400" height="400"></img>
+                <h2 class="centerme">
+                    Oops! I need to get rid of a <br>permanent marker stain!
+                </h2>
+                <div class="centerme">2nd Grade Project [<a href="https://drive.google.com/file/d/1-HGblbzU6rd0cwlkC2exHWRwLXjXIg-z/view" target="_blank">presentation </a>| <a href="https://drive.google.com/file/d/1BOPaJXAABxhwotznL7o0C1Dr9Bq2Rgnk/view?usp=drive_link" target="_blank">log book</a>]</div> 
+            </td>
+            
+         
+
+            <td>
+                <td>
+                    <img src="2022 Science fair.png" width="400" height="400"></img>
+                    <h2 class="centerme">
+                        Which masks work the best at<br> blocking air and<br> water particles?
+                    </h2>
+                    <div class="centerme">3rd Grade Project [<a href="https://drive.google.com/file/d/1-EY7aiDNV4N1GqjPtayW-vIzbi3vfMRX/view" target="_blank">presentation </a>| <a href="https://drive.google.com/file/d/1-EhgCChMgARWo40___PgopgCJiCskD8E/view?usp=drive_link" target="_blank">log book</a>]</div> 
+                </td>
+            </td>
+            <td>
+                <td>
+                    <img src="2023 Science Fair.png" width="400" height="400"></img>
+                    <h2 class="centerme">
+                        What method of growing<br> spider plants will grow long <br>roots the fastest?
+                    </h2>
+                    <div class="centerme">4th Grade Project [<a href="https://drive.google.com/file/d/1-1sfdr_yO4Qa24TH49Ok7h2hC1bgBp2-/view?usp=drive_link" target="_blank">presentation </a>| <a href="https://drive.google.com/file/d/1-AC_Zwlb66lzzpwi2IMFUkiTMVhHlwKB/view?usp=drive_link">log book</a>]</div> 
+                </td>
+            </td>
+        </tr>
 </body>
 
 </html>
